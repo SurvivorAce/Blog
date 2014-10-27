@@ -5,8 +5,7 @@
 </head>
 <body>
 	<?php 
-		//INSERT thing ;)
-		echo "Mayo is an instrument!";
+		require_once(__DIR__ . "/controller/create-db.php");
 	?>
 </body>
 </html>
