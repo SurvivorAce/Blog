@@ -3,6 +3,7 @@
 
 	$connection = new mysqli($host, $username, $password);
 
+	//* If the connection fails state the the error.
 	if ($connection->connect_error) {
 		die("Error: " . $connection->connect_error);
 	}
