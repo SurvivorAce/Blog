@@ -24,6 +24,12 @@
 		//* Echoes text if database already exists.
 		echo "Database already exists";
 	}
+
+	//* Creates a Table.							
+	$query = $connection->query("CREATE TABLE posts (" . "id  int(11) NOT NULL AUTO_INCREMENT");
+
+
+
 	//* Closes connection.
 	$connection->close();
 
