@@ -27,10 +27,10 @@
 
 	//* Creates a Table.							
 	$query = $connection->query("CREATE TABLE posts ("
-			 . "id  int(11) NOT NULL AUTO_INCREMENT"  
-			 . "title varchar(255) NOT NULL"
-			 . "post text NOT NULL"						
-			 . "PRIMARY KEY (id))");
+			 . "id int(11) NOT NULL AUTO_INCREMENT"  //* ID. 11 values inside the integer. ID can't be null. Auto increments the ID numbers.
+			 . "title varchar(255) NOT NULL"	//* Title. Atleast 255 characters for a title. Title can't be null.
+			 . "post text NOT NULL"		//* Post. Will contain text. Can't be null.					
+			 . "PRIMARY KEY (id))");	//* Tells the table that the primary key is id.
 
 	//* Closes connection.
 	$connection->close();
