@@ -1,7 +1,12 @@
+/*For Normal Computers*/
 body{
 	background-color: lime;
 }
-
+/*For iPhone*/
 @media (max-width: 320px) {
 	html {background: navy;}
+}
+/*For iPad*/
+@media (min-width: 1024px) {
+	html {background: red;}
 }

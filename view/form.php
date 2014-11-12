@@ -1,6 +1,10 @@
+<?php
+	require_once(__DIR__ . "/../model/config.php"); //* Link to config.php
+?>
+
 <h1>Create Blog Post</h1>
 
-<form>
+<form method="post" action="<?php echo $path. "controller/create-post.php"; ?>"> <!--Echoes the variable "$path" and concatenates it with a string to create-post.php-->
 	<div>
 		<label for="title">Title: </label> <!--Sets the lable "title" for your post -->
 		<input type="text" name="title"/>	<!--Makes a chat box thing for you to lable your title -->
