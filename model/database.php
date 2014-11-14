@@ -1,8 +1,12 @@
 <?php
-	$host = "localhost";
-	$username = "root";
-	$password = "root";
-	$database = "blog_db";
-
+	//* Classes are used to be called in an instance of an object. 
+	class Database {
+		private $connection;
+		private $host;
+		private $username;
+		private $password;
+		private $database;
+	}
+	
 
 ?>

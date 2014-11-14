@@ -1,5 +1,5 @@
 <?php
-	require_once(__DIR__ . "/../model/database.php"); //* Links to Database.php
+	require_once(__DIR__ . "/../model/config.php"); //* Links to Database.php
 
 	$connection = new mysqli($host, $username, $password, $database); //* Sets up variables
 
@@ -16,5 +16,5 @@
 		echo "<p>$connection->error</p>"; //* If query ISN'T working then it will echo the error
 	}
 
-	$connection->close(); //*Closes Connection
+	$connection->close(); //*Closes Connection 
 ?>
