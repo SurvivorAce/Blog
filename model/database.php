@@ -15,5 +15,27 @@
 			$this->password = $password;
 			$this->database = $database;
 		}
+
+		public function openConnection() {
+			$this->connection = new mysqli($this->host, $this->username, $this->password, $this->database)
+
+			if ($this->connection->connect_error) {
+			//* Checks if we established a connection or not	
+				die("<p>Error: " . $this->connection->connect_error . "</p>");
+			}			
+		}
+
+		public function closeConnection() {
+			if (isset($this->connection)) {
+			//* isset is used to check if the variable has been set	
+				$this->connection->close();
+			}
+		}
+
+		public function query($string) {
+
+		}
+
 	}
+
 ?>
