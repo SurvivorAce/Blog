@@ -16,5 +16,4 @@
 		echo "<p>$connection->error</p>"; //* If query ISN'T working then it will echo the error
 	}
 
-	$connection->close(); //*Closes Connection 
 ?>
