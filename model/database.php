@@ -10,7 +10,7 @@
 		public $error;
 
 		//* function __construct is used to define a constructor
-		public function __construct($host, $username, $path, $database) { //*Local variables 
+		public function __construct($host, $username, $password, $database) { //*Local variables 
 			$this->host = $host; 
 			$this->username = $username;
 			$this->password = $password;
