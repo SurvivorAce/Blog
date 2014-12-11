@@ -5,11 +5,11 @@
 	$username = filter_input(INPUT_POST, "username", FILTER_SANITIZE_STRING);
 	$password = filter_input(INPUT_POST, "password", FILTER_SANITIZE_STRING);
 
-	$salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "S";
+	$salt = "$5$" . "rounds=5000$" . uniqid(mt_rand(), true) . "$";
 
 	$hashedPassword = crypt($password, $salt);
 
-	$query = $_SESSION["connection"]->query("INSERT INTO users SET" 
+	$query = $_SESSION["connection"]->query("INSERT INTO users SET " 
 		. "email = '$email',"
 		. "username = '$username',"
 		. "password = '$hashedPassword',"
