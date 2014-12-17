@@ -1,7 +1,12 @@
 /*For Normal Computers*/
 body{
-	background-color: lime;
+	background: url("../images/background.jpg")no-repeat center fixed;
 }
+
+nav ul li {
+  display: inline-block;
+}
+
 /*For iPhone*/
 @media (max-width: 320px) {
 	html {background: navy;}

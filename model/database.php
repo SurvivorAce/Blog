@@ -35,10 +35,10 @@
 			}
 		}
 
-			else {
+			/*else {
 				//* Echoes text if database already exists.
 				echo "<p>Database already exists</p>";
-			}			
+			}*/			
 		}
 
 		public function openConnection() {

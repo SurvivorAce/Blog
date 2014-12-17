@@ -8,9 +8,9 @@
 	if($result) {
 		while($row = mysqli_fetch_array($result)) {
 			echo "<div class='posts'>";
-			echo "<h2>" . $row['title'] . "</h2>";
+			echo "<h2>" . "<font color='white'>" . $row['title'] . "</font>" . "</h2>";
 			echo "<br />";
-			echo "<p>" . $row['post'] . "</h2>";
+			echo "<p>" . "<font color='white'>" . $row['post'] . "</font>" . "</h2>";
 			echo "<br />";
 			echo "</div>";
 		}

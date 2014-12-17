@@ -14,9 +14,9 @@
 		echo "<p>Successfully created table: posts</p>";	// Informs you that it succesfully created table: posts.
 	}
 
-	else {
+	/*else {
 		echo "<p>" . $_SESSION["connection"]->error . "</p>";	// Informs you know that table: posts already exists.
-	}
+	}*/
 
 	$query = $_SESSION["connection"]->query("CREATE TABLE users ("
 			. "id int(11) NOT NULL AUTO_INCREMENT,"
@@ -29,6 +29,6 @@
 	if($query) {
 		echo "<p>Successfully created table: users</p>";
 	}
-	else
-		echo "<p>" . $_SESSION["connection"]->error . "</p>";
+	/*else
+		echo "<p>" . $_SESSION["connection"]->error . "</p>";*/
 ?>
