@@ -1,5 +1,6 @@
 <?php
 	require_once(__DIR__ . "/../model/config.php"); //* Link to config.php
+	require_once(__DIR__ . "/../controller/login-verify.php");
 ?>
 <nav>
 	<ul>

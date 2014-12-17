@@ -8,5 +8,5 @@ body{
 }
 /*For iPad*/
 @media (min-width: 1024px) {
-	html {background: red;}
+	html {background: purple;}
 }

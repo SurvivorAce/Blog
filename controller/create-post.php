@@ -1,6 +1,7 @@
 <?php
 	require_once(__DIR__ . "/../model/config.php"); //* Links to Database.php
-
+	require_once(__DIR__ . "/../controller/login-verify.php");
+	
 	$title = filter_input(INPUT_POST, "title", FILTER_SANITIZE_STRING); //* Recieves Title Input
 	$post = filter_input(INPUT_POST, "post", FILTER_SANITIZE_STRING); //* Recieves Post Input
 	$date = new DateTime('today');
