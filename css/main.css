@@ -1,6 +1,6 @@
 /*For Normal Computers*/
 body{
-	background: url("../images/background.jpg")no-repeat center fixed;
+	background: url("../images/background7.jpg")no-repeat center fixed;
 }
 
 nav ul li {
@@ -13,5 +13,5 @@ nav ul li {
 }
 /*For iPad*/
 @media (min-width: 1024px) {
-	html {background: purple;}
+	html {background: black;}
 }
